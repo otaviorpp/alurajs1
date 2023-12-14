@@ -9,59 +9,186 @@
     <h5>Desafios 1</h5>
         <p>Pergunte ao usuário qual é o dia da semana. Se a resposta for "Sábado" ou "Domingo", mostre "Bom fim de semana!". Caso contrário, mostre "Boa semana!".</p>
             <script>
-                
+                let diaSemana = prompt("Qual o dia da semana de hoje?");
+
+                if (diaSemana == "Sábado" ){
+                    alert("Bom final de semana querido!");
+                }
+                else if (diaSemana == "Domingo"){
+                    alert("Bom final de semana querido!");
+                }
+                else {
+                    alert("Boa semana querido!");
+                }
             </script>
+
         <p>Verifique se um número digitado pelo usuário é positivo ou negativo. Mostre um alerta informando.</p>
             <script>
-                    
+                  let numero = prompt("Digite um número positivo ou negativo: ");
+                  
+                  if(numero < 0){
+                    alert("Seu número é negativo.");
+                  }
+                  else {
+                    alert("Seu número é positivo.");
+                  }
             </script>
         <p>Crie um sistema de pontuação para um jogo. Se a pontuação for maior ou igual a 100, mostre "Parabéns, você venceu!". Caso contrário, mostre "Tente novamente para ganhar.".</p>
             <script>
-                    
+                    let pontos = 101;
+
+                    if(pontos >= 100){
+                        console.log("Parabéns você venceu!");
+                    }
+                    else{
+                        console.log("Tente novamente para vencer.");
+                    }
             </script>
         <p>Crie uma mensagem que informa o usuário sobre o saldo da conta, usando uma template string para incluir o valor do saldo.</p>
             <script>
-                    
+                  let saldoConta = 10;
+                  alert(`Seu saldo é de R$ ${saldoConta} reais.`)  
             </script>
         <p>Peça ao usuário para inserir seu nome usando prompt. Em seguida, mostre um alerta de boas-vindas usando esse nome.</p>
             <script>
-                    
+                    let nome = prompt("Digite seu nome: ");
+
+                    alert(`Boas Vindas ${nome}!`);
             </script>
 
     <h5>Desafios 2</h5>
         <p>Crie um contador que comece em 1 e vá até 10 usando um loop while. Mostre cada número.</p>
+            <script>
+                let contador = 1;
 
+                while(contador <= 10){
+                    console.log(contador);
+                    contador++;
+                }
+            </script>
         <p>Crie um contador que começa em 10 e vá até 0 usando um loop while. Mostre cada número.</p>
+            <script>
+                let contadorNegavito = 10;
 
+                while(contador >= 0){
+                    console.log(contadorNegavito);
+                    contador--;
+                }
+            </script>
         <p>Crie um programa de contagem regressiva. Peça um número e conte deste número até 0, usando um loop while no console do navegador.</p>
+            <script>
+                let contagem = prompt("Digite um número para contagem regressiva até 0: ");
 
+                while (contagem >= 0 ) {
+                    console.log(contagem);
+                    contagem--;
+                }
+            </script>
         <p>Crie um programa de contagem progressiva. Peça um número e conte de 0 até esse número, usando um loop while no console do navegador.</p>
+            <script>
+                let contando = 0;
+                let numeroMaximo = prompt("Digite um número para contar de 0 até ele: ");
+
+                while (contando <= numeroMaximo) {
+                    console.log(contando);
+                    contando++;
+                }
+            </script>
 
     <h5>Desafios finais</h5>
         <p>Crie um programa que utilize o console.log para exibir uma mensagem de boas-vindas.</p>
+            <script>
+                console.log(`Boas Vindas!`);
+            </script>
 
         <p>Crie uma variável chamada "nome" e atribua a ela o seu nome. Em seguida, utilize o console.log para exibir a mensagem "Olá, [seu nome]!" no console do navegador.</p>
-
+            <script>
+                let nameUser = "Otávio";
+                console.log(`Olá, ${nameUser}!`);
+            </script>
         <p>Crie uma variável chamada "nome" e atribua a ela o seu nome. Em seguida, utilize o alert para exibir a mensagem "Olá, [seu nome]!" .</p>
-
+                        <script>
+                let name = "Otávio";
+                alert(`Olá, ${name}!`);
+            </script>
         <p>Utilize o prompt e faça a seguinte pergunta: Qual a linguagem de programação que você mais gosta?. Em seguida, armazene a resposta em uma variável e mostre no console do navegador.</p>
-
+            <script>
+                let linguagem = prompt("Qual a sua linguagem de programação preferida?");
+                console.log(linguagem);
+            </script>
         <p>Crie uma variável chamada "valor1" e outra chamada "valor2", atribuindo a elas valores numéricos de sua escolha. Em seguida, realize a soma desses dois valores e armazene o resultado em uma terceira variável chamada "resultado". Utilize o console.log para mostrar a mensagem "A soma de [valor1] e [valor2] é igual a [resultado]." no console.</p>
-
+            <script>
+                let valor1 = 10;
+                let valor2 = 15;
+                let resultadoSoma = valor1 + valor2;
+                console.log(`A soma de ${valor1} e ${valor2} é igual a ${resultadoSoma}`);
+            </script>
         <p>Crie uma variável chamada "valor1" e outra chamada "valor2", atribuindo a elas valores numéricos de sua escolha. Em seguida, realize a subtração desses dois valores e armazene o resultado em uma terceira variável chamada "resultado". Utilize o console.log para mostrar a mensagem "A diferença entre [valor1] e [valor2] é igual a [resultado]." no console.</p>
-
+            <script>
+                let valor3 = 10;
+                let valor4 = 15;
+                let resultadoSub = valor3 - valor4;
+                console.log(`A soma de ${valor3} e ${valor4} é igual a ${resultadoSub}`);
+            </script>
         <p>Peça ao usuário para inserir sua idade com prompt. Com base na idade inserida, utilize um if para verificar se a pessoa é maior ou menor de idade, exibindo uma mensagem apropriada no console.</p>
+            <script>
+                let idade = prompt("Qual a sua idade?");
 
+                if(idade >= 18){
+                    console.log("O usuário é maior de idade.");
+                }
+                else{
+                    console.log("O usuário é menor de idade.");
+                }
+            </script>
         <p>Crie uma variável "numero" e peça um valor com prompt verifique se é positivo, negativo ou zero. Use if-else para imprimir a respectiva mensagem.</p>
+            <script>
+                let valor = prompt("Digite um número: ");
 
+                if(valor == 0){
+                    console.log("O valor é igual a 0.");
+                }
+                else if(valor > 0) {
+                    console.log("O valor é positivo.")
+                }
+                else{
+                    console.log("O valor é negativo.");
+                }
+            </script>
         <p>Use um loop while para imprimir os números de 1 a 10 no console.</p>
+            <script>
+                let loop = 1;
 
+                while (loop <= 10){
+                    console.log(loop);
+                    loop++;
+                }
+            </script>
         <p>Crie uma variável "nota" e atribua um valor numérico a ela. Use if-else para determinar se a nota é maior ou igual a 7 e exiba "Aprovado" ou "Reprovado" no console.</p>
+            <script>
+                let nota = 9;
 
+                if(nota >= 7){
+                    console.log("Aprovado.")
+                }
+                else{
+                    console.log("Reprovado.")
+                }
+            </script>
         <p>Use o Math.random para gerar qualquer número aleatório e exiba esse número no console.</p>
-
+            <script>
+                numeroAleatorio = Math.random();
+                console.log(numeroAleatorio);
+            </script>
         <p>Use o Math.random para gerar um número inteiro entre 1 e 10 e exiba esse número no console.</p>
-
+            <script>
+                numeroInteiro = parseInt(Math.random() * 10) + 1
+                console.log(numeroInteiro)
+            </script>
         <p>Use o Math.random para gerar um número inteiro entre 1 e 1000 e exiba esse número no console.</p>
-</body>
+            <script>
+                numeroInteiroMil = parseInt(Math.random() * 1000) + 1
+                console.log(numeroInteiroMil)
+            </script>
+    </body>
 </html>
